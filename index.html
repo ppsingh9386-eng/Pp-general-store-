@@ -1,23 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grocery Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A² Mart - Grocery Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+        .product {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .product-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .whatsapp-btn:hover {
+            background-color: #1ebe57;
+        }
+    </style>
 </head>
 <body>
-  <h1>My Grocery Store</h1>
-  <ul>
-    <li>Sugar</li>
-    <li>Rice</li>
-    <li>Tea</li>
-    <li>Biscuit</li>
-    <li>Mixture</li>
-    <li>Lays</li>
-    <li>Water</li>
-    <li>Cold Drink</li>
-    <li>Cigarette</li>
-    <li>Anything Else</li>
-  </ul>
+
+    <header>
+        <h1>A² Mart - Grocery Store</h1>
+    </header>
+
+    <div class="container">
+        <div class="product">
+            <span class="product-name">Sugar</span>
+            <a class="whatsapp-btn" href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Sugar" target="_blank">Order on WhatsApp</a>
+        </div>
+        <div class="product">
+            <span class="product-name">Rice</span>
+            <a class="whatsapp-btn" href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Rice" target="_blank">Order on WhatsApp</a>
+        </div>
+        <div class="product">
+            <span class="product-name">Cooking Oil</span>
+            <a class="whatsapp-btn" href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Cooking%20Oil" target="_blank">Order on WhatsApp</a>
+        </div>
+        <div class="product">
+            <span class="product-name">Tea</span>
+            <a class="whatsapp-btn" href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Tea" target="_blank">Order on WhatsApp</a>
+        </div>
+        <div class="product">
+            <span class="product-name">Biscuits</span>
+            <a class="whatsapp-btn" href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Biscuits" target="_blank">Order on WhatsApp</a>
+        </div>
+        <!-- Aap aur products yahan add kar sakte ho -->
+    </div>
+
 </body>
 </html>
