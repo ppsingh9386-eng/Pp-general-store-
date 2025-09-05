@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,42 +6,99 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PP General Store</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; }
-    header { background: #2e7d32; color: white; text-align: center; padding: 20px; }
-    .container { max-width: 800px; margin: 20px auto; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-    h2 { text-align: center; color: #333; }
-    .product { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #ddd; padding: 10px 0; }
-    .product:last-child { border-bottom: none; }
-    .product-name { font-size: 18px; font-weight: bold; }
-    .product-price { color: #555; }
-    footer { text-align: center; margin-top: 20px; padding: 10px; background: #eee; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+    }
+    header {
+      background: green;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .contact {
+      font-size: 14px;
+      margin-top: 5px;
+    }
+    main {
+      padding: 20px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .product {
+      background: white;
+      margin: 10px auto;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      max-width: 400px;
+    }
+    .product h3 {
+      margin: 0 0 5px;
+    }
+    .price {
+      color: green;
+      font-weight: bold;
+    }
+    .order-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background: #25d366;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .order-btn:hover {
+      background: #1ebe5d;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #eee;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>PP General Store</h1>
-    <p>Garhpar, Bihar Sharif, Nalanda</p>
-    <p>📞 7634016234</p>
+    <div>Garhpar, Bihar Sharif, Nalanda</div>
+    <div class="contact">📞 7634016234</div>
   </header>
 
-  <div class="container">
+  <main>
     <h2>Available Products</h2>
+
     <div class="product">
-      <span class="product-name">Sugar</span>
-      <span class="product-price">₹50 / kg</span>
+      <h3>Sugar</h3>
+      <div class="price">₹50 / kg</div>
+      <a class="order-btn" href="https://wa.me/917634016234?text=Hello!%20I%20want%20to%20order:%20Sugar%20-%201%20kg%20(₹50)" target="_blank">Order on WhatsApp</a>
     </div>
+
     <div class="product">
-      <span class="product-name">Oil</span>
-      <span class="product-price">₹170 / kg</span>
+      <h3>Oil</h3>
+      <div class="price">₹170 / kg</div>
+      <a class="order-btn" href="https://wa.me/917634016234?text=Hello!%20I%20want%20to%20order:%20Oil%20-%201%20kg%20(₹170)" target="_blank">Order on WhatsApp</a>
     </div>
+
     <div class="product">
-      <span class="product-name">Aata</span>
-      <span class="product-price">₹40 / kg</span>
+      <h3>Aata</h3>
+      <div class="price">₹40 / kg</div>
+      <a class="order-btn" href="https://wa.me/917634016234?text=Hello!%20I%20want%20to%20order:%20Aata%20-%201%20kg%20(₹40)" target="_blank">Order on WhatsApp</a>
     </div>
-  </div>
+  </main>
 
   <footer>
-    <p>© 2025 PP General Store | All Rights Reserved</p>
+    © 2025 PP General Store | All Rights Reserved
   </footer>
 </body>
 </html>
