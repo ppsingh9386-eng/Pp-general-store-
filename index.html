@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PP General Store</title>
+  <title>A² Mart</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,92 +13,94 @@
       background: #f5f5f5;
     }
     header {
-      background: green;
+      background: #2e7d32;
       color: white;
-      padding: 20px;
       text-align: center;
+      padding: 20px;
     }
     header h1 {
       margin: 0;
+      font-size: 28px;
     }
-    .contact {
-      font-size: 14px;
-      margin-top: 5px;
-    }
-    main {
+    .container {
+      width: 90%;
+      margin: 20px auto;
+      background: white;
+      border-radius: 10px;
       padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
     h2 {
-      text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
+      color: #333;
     }
     .product {
-      background: white;
-      margin: 10px auto;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      max-width: 400px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
     }
-    .product h3 {
-      margin: 0 0 5px;
+    .product:last-child {
+      border-bottom: none;
     }
-    .price {
-      color: green;
-      font-weight: bold;
-    }
-    .order-btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 8px 12px;
+    button {
       background: #25d366;
       color: white;
-      text-decoration: none;
+      border: none;
+      padding: 8px 15px;
       border-radius: 5px;
-      font-size: 14px;
+      cursor: pointer;
     }
-    .order-btn:hover {
-      background: #1ebe5d;
+    button:hover {
+      background: #1eb346;
     }
     footer {
       text-align: center;
-      padding: 10px;
-      background: #eee;
+      padding: 15px;
+      background: #333;
+      color: white;
       margin-top: 20px;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>PP General Store</h1>
-    <div>Garhpar, Bihar Sharif, Nalanda</div>
-    <div class="contact">📞 7634016234</div>
+    <h1>A<sup>2</sup> Mart</h1>
+    <p>Garhpar, Bihar Sharif, Nalanda</p>
+    <p>📞 7634016234</p>
   </header>
 
-  <main>
+  <div class="container">
     <h2>Available Products</h2>
 
     <div class="product">
-      <h3>Sugar</h3>
-      <div class="price">₹50 / kg</div>
-      <a class="order-btn" href="https://wa.me/917634016234?text=Hello!%20I%20want%20to%20order:%20Sugar%20-%201%20kg%20(₹50)" target="_blank">Order on WhatsApp</a>
+      <span>Sugar - ₹50/kg</span>
+      <a href="https://wa.me/917634016234?text=Hello!%20I%20want%20to%20order:%20Sugar%20-%201%20kg%20(₹50)" target="_blank">
+        <button>Order on WhatsApp</button>
+      </a>
     </div>
 
     <div class="product">
-      <h3>Oil</h3>
-      <div class="price">₹170 / kg</div>
-      <a class="order-btn" href="https://wa.me/917634016234?text=Hello!%20I%20want%20to%20order:%20Oil%20-%201%20kg%20(₹170)" target="_blank">Order on WhatsApp</a>
+      <span>Oil - ₹170/kg</span>
+      <a href="https://wa.me/917634016234?text=Hello!%20I%20want%20to%20order:%20Oil%20-%201%20kg%20(₹170)" target="_blank">
+        <button>Order on WhatsApp</button>
+      </a>
     </div>
 
     <div class="product">
-      <h3>Aata</h3>
-      <div class="price">₹40 / kg</div>
-      <a class="order-btn" href="https://wa.me/917634016234?text=Hello!%20I%20want%20to%20order:%20Aata%20-%201%20kg%20(₹40)" target="_blank">Order on WhatsApp</a>
+      <span>Aata - ₹40/kg</span>
+      <a href="https://wa.me/917634016234?text=Hello!%20I%20want%20to%20order:%20Aata%20-%201%20kg%20(₹40)" target="_blank">
+        <button>Order on WhatsApp</button>
+      </a>
     </div>
-  </main>
+
+  </div>
 
   <footer>
-    © 2025 PP General Store | All Rights Reserved
+    © 2025 A<sup>2</sup> Mart | All Rights Reserved
   </footer>
+
 </body>
 </html>
